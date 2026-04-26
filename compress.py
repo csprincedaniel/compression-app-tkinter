@@ -8,4 +8,8 @@ data_bytes = bytes(data, 'utf-8')
 compressed = base64.b64encode(zlib.compress(data_bytes,9))
 decoded = compressed.decode('utf-8')
 file = open('compressed.txt', 'w')
-file.write(decoded)
+##file.write(decoded)
+
+
+decompressed = zlib.decompress(base64.urlsafe_b64decode(compressed))
+print(decompressed)
