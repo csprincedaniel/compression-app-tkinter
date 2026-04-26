@@ -11,5 +11,5 @@ file = open('compressed.txt', 'w')
 ##file.write(decoded)
 
 
-decompressed = zlib.decompress(base64.urlsafe_b64decode(compressed))
-print(decompressed)
+#decompressed = zlib.decompress(base64.urlsafe_b64decode(compressed))
+#print(decompressed)
